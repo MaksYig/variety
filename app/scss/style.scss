@@ -1,0 +1,83 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+.header__content {
+ background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  &-inner {
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    margin-top:200px;
+  }
+  &-text-block {
+    max-width: 770px;
+    align-content:flex-end;
+  }
+  &-title {
+    font-size: 74px;
+    font-weight: 700;
+    color: $red;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    span {
+      color: #fff;
+    }
+  }
+  &-text {
+    font-size: 24px;
+    color: #fff;
+    line-height: 36px;
+    margin-bottom: 45px;
+  }
+  &__btn {
+    a{
+      font-size: 24px;
+      background-color:$red;
+      color: #fff;
+      padding: 25px 70px;
+    }
+  }
+
+  .header__top {
+    padding-top: 10px;
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-menu {
+      display: flex;
+      align-items: center;
+      &-list {
+        display: inline-block;
+        &.active {
+          border-bottom: 3px solid #fff;
+        }
+        & + li {
+          margin-left: 40px;
+        }
+        a {
+          font-size: 16px;
+          color: #fff;
+          line-height: 36px;
+          text-transform: uppercase;
+        }
+      }
+    }
+    &-btn {
+      padding-top: 40px;
+      a {
+        font-size: 16px;
+        color: $red;
+        background-color: #fff;
+        padding: 11px 22px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+@import "media";
