@@ -28,7 +28,7 @@ p {
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   color: $grey;
   font-weight: 400;
@@ -45,3 +45,43 @@ body {
   // padding: 0 15px;
 }
 
+.section__name {
+  text-align: center;
+  padding-top: 220px;
+  margin-bottom: 115px;
+
+  &-title {
+    font-size: 50px;
+    font-weight: 500;
+    color: $red;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 45px;
+    display: inline-flex;
+    
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 6px;
+      background-color: $red;
+      left: -130px;
+      top: -4px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 6px;
+      background-color: $red;
+      right: -130px;
+      bottom: -4px;
+    }
+  }
+  &-subtitle{
+    font-size: 18px;
+    line-height: 27px;
+    color: #222222;
+    text-align: center;
+  }
+}
