@@ -85,6 +85,10 @@
         background-color: #fff;
         padding: 11px 22px;
         text-transform: uppercase;
+        &:hover{
+          background-color:#fff;
+          color: $red;
+        }
       }
     }
   }
@@ -331,6 +335,7 @@
     text-transform: uppercase;
     padding: 20px 40px;
     background-color: $red;
+    
   }
 }
 .btn {
@@ -342,6 +347,7 @@
     text-transform: uppercase;
     padding: 20px 40px;
     background-color: $red;
+    
   }
 }
 #progressbar {
@@ -608,6 +614,7 @@
 .news__btn {
   a {
     padding: 18px 45px;
+   
   }
 }
 .slick-slide {
@@ -718,7 +725,12 @@
         background-color: #fff;
         text-transform: uppercase;
         padding: 24px 50px;
+        &:hover{
+          background-color:$red;
+          color: #fff;
+        }
       }
+      
     }
   }
   &__content-inner {
@@ -733,10 +745,11 @@
 .footer {
   background-color: #1b1b1b;
   padding-top: 85px;
-  padding-bottom: 70px;
+
   &__top {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 70px;
   }
   &__title {
     font-size: 30px;
@@ -806,31 +819,42 @@
       font-size: 18px;
       line-height: 36px;
       color: #fff;
+      &:hover{
+        color: $red;
+      }
     }
   }
+  &__follow{
+   width: 272px;
+   text-align: center;
+  }
   &__social-link {
+    text-align: center;
     li {
       display: inline-block;
       font-size: 24px;
       line-height: 36px;
-      color: $red;
-      & + .footer__social-link li{
-        margin-left: 30px;
+      color: #fff;
+      
+      &:hover{
+        color: $red;
       }
-
     }
     .social__tw {
       position: relative;
+      margin-right: 30px;
       &::before {
         position: absolute;
         font-family: "icomoon" !important;
         top: 0;
         left: 0;
         content: "\f099";
+        
       }
     }
-    .social__in {
+    .social__ins {
       position: relative;
+      margin-right: 30px;
       &::before {
         position: absolute;
         font-family: "icomoon" !important;
@@ -839,8 +863,61 @@
         content: "\f16d";
       }
     }
+    .social__fa{
+      position: relative;
+      margin-right: 30px;
+      &::before {
+        position: absolute;
+        font-family: "icomoon" !important;
+        top: 0;
+        left: 0;
+        content: "\f09a";
+      }
+    }
+    .social__vi{
+      position: relative;
+      margin-right: 30px;
+      &::before {
+        position: absolute;
+        font-family: "icomoon" !important;
+        top: 0;
+        left: 0;
+        content: "\f27d";
+      }
+    }
+    .social__pi{
+      position: relative;
+      margin-right: 30px;
+      &::before {
+        position: absolute;
+        font-family: "icomoon" !important;
+        top: 0;
+        left: 0;
+        content: "\f0d2";
+      }
+    }
+    .social__in{
+      position: relative;
+      &::before {
+        position: absolute;
+        font-family: "icomoon" !important;
+        top: 0;
+        left: 0;
+        content: "\f0e1";
+      }
+    }
+  }
+  &__copy{
+    background-color: $red;
+    &-text{
+      font-size: 14px;
+      line-height: 36px;
+      color: #fff;
+      text-align: center;
+    }
   }
 }
+
 /* End Footer */
 
 @import "media";
