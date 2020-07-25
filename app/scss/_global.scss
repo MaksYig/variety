@@ -35,7 +35,7 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -58,7 +58,7 @@ body {
     position: relative;
     margin-bottom: 45px;
     display: inline-flex;
-    
+
     &:before {
       content: "";
       position: absolute;
@@ -78,7 +78,7 @@ body {
       bottom: -4px;
     }
   }
-  &-subtitle{
+  &-subtitle {
     font-size: 18px;
     line-height: 27px;
     color: #222222;
