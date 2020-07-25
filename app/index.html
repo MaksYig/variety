@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="shortcut icon" href="#" type="image/x-icon" />
     <meta name="description" content=" " />
     <meta name="keywords" content="" />
@@ -38,8 +39,11 @@
                 <span></span>
               </div>
               </div>
+              
             </div>
            </div>
+
+           <!-- 
            <div class="header__content-inner" >
         <div class="header__content-text-block">
           <div class="header__content-title">
@@ -60,9 +64,9 @@
                 <span>270</span> 
               </div>
               <div class="header__content-footer-row">
-              <a href="#"class="login"><span >Login</span></a>  
+              <a data-fancybox data-src="#login__val" href="javascript:;" class="btn btn-primary login"><span >Login</span></a>  
               <span class="type">Volunteer</span>
-              <a href="#" class="signup"><span>Signup</span></a>
+              <a data-fancybox data-src="#singup__val" href="javascript:;" class="signup btn btn-primary"><span>Signup</span></a>
               </div>
             </div> 
             <div class="header__content-footer-block red">
@@ -70,9 +74,9 @@
                 <span>15</span> 
               </div>
               <div class="header__content-footer-row">
-              <a href="#"class="login"><span >Login</span></a>  
+              <a data-fancybox data-src="#login__don" href="javascript:;" class="btn btn-primary login"><span >Login</span></a>  
               <span class="type">donner</span>
-              <a href="#" class="signup"><span>Signup</span></a>
+              <a data-fancybox data-src="#singup__don" href="javascript:;" class="signup btn btn-primary"><span>Signup</span></a>
               </div>
             </div> 
             
@@ -392,12 +396,67 @@
    </div>
   
   </footer>
-
-
-
+   -->
   </main>
 
+  <!-- Popup windows -->
+  <div class="login__popup-don" style="display: none;" id="login__val">
+    <div class="login__inner">
+      <div class="login__title">
+        Login for Valunteer
+      </div>
+      <form action="" class="login__val-form">
+        <input type="text" placeholder="Your name">
+        <input type="password" placeholder="Your password">
+      <button class="login__btn" type="submit"> Sign in</button>
+      </form>
+    </div>
+  </div>
+  <div class="login__popup-don" style="display: none;" id="login__don">
+    <div class="login__inner">
+      <div class="login__title">
+        Login for Donner
+      </div>
+      <form action="" class="login__don-form">
+        <input type="text" placeholder="Your name">
+        <input type="password" placeholder="Your password">
+      <button class="login__btn" type="submit"> Sign in</button>
+      </form>
+    </div>
+  </div>
 
+  <div class="singup__popup-val" style="display: none;" id="singup__val">
+    <div class="login__inner">
+      <div class="login__title">
+        Sing up for Valunteer
+      </div>
+      <form action="" class="singup__val-form">
+        <input type="text" placeholder="Your name">
+        <input type="email" placeholder="Your Email">
+        <input type="phone" placeholder="Your Phone">
+
+        <input type="password" placeholder="Your password">
+      <button class="login__btn" type="submit"> Sign up</button>
+      </form>
+    </div>
+  </div>
+  <div class="singup__popup-don" style="display: none;" id="singup__don">
+    <div class="login__inner">
+      <div class="login__title">
+        Sing up for Donner
+      </div>
+      <form action="" class="singup__don-form">
+        <input type="text" placeholder="Your name">
+        <input type="email" placeholder="Your Email">
+        <input type="phone" placeholder="Your Phone">
+
+        <input type="password" placeholder="Your password">
+      <button class="login__btn" type="submit"> Sign up</button>
+      </form>
+    </div>
+  </div>
+
+<!-- End Popup windows -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
