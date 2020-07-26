@@ -1,5 +1,140 @@
 @media (max-width: 1080px) {
-  .header__top-menu {
+  .header__top-inner > .header__top-menu {
+  display: none;
+    
+  }
+  body.block{
+    overflow: hidden;
+  }
+.header__top-menu.active {
+  position: absolute;
+  display: flex;
+  padding: 0;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(246,81,77,0.85);
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  
+    li{
+      margin-right: 0;
+      margin-bottom: 20px;
+      a{
+        font-size: 28px;
+      }
+    }
+  }
+  .header__top-inner > .menu__burger {
+    display: block;
+  }
+  .header__top-logo {
+    img {
+      width: 200px;
+    }
+  }
+}
+.header__content-title {
+  font-size: 66px;
+  margin-bottom: 40px;
+}
+.header__content-text {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+.header__content-footer-block {
+  padding: 15px;
+}
+.header__content-footer-block > .half__circle {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    font-size: 28px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .header__content-footer-block > .half__circle {
     display: none;
   }
+  .header__content-footer-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .header__content-footer-row .type {
+    line-height: 30px;
+    padding: 0 10px;
+  }
+  .header__content-footer-block {
+    width: 85%;
+  }
+}
+
+@media (max-width: 580px) {
+  .header__top-logo {
+    img {
+      width: 180px;
+    }
+  }
+  .header__content-footer-block {
+    width: 100%;
+  }
+  .header__content-title {
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .header__content-text {
+    font-size: 18px;
+    text-align: center;;
+}
+.header__content__btn {
+  display: flex;
+  justify-content: center;
+  a {
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+}
+}
+
+@media (max-width: 470px) {
+
+
+  .header__content-footer-row .login{
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .header__content-footer-row .login::after {
+    content: "\f007";
+    position: absolute;
+    font-family: "icomoon";
+    font-size: 14px;
+
+}
+.header__content-footer-row .signup {
+  font-size: 14px;
+  line-height: 26px;
+
+}
+.header__content-footer-row .signup::after {
+  content: "\f13e";
+  position: absolute;
+  font-family: "icomoon";
+  font-size: 14px;
+
+}
+.header__content-footer-row .type {
+  font-size: 18px;
+  line-height: 26px;
+
+}
 }

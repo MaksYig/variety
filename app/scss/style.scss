@@ -3,22 +3,30 @@
 @import "fonts";
 @import "global";
 
+.header{
+
+
+}
 .header__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+ 
+
 }
 .header__content {
-  background-position: center;
+  background-position: inherit;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  position: relative;
 
   &-inner {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: relative;
 
   }
   &-text-block {
@@ -51,20 +59,53 @@
   }
   .menu__burger {
     display: none;
-    width: 30px;
-    height: 20px;
+    width: 40px;
+    height: 30px;
     position: relative;
+    z-index: 2;
     &:before{
       content: "";
       position: absolute;
       background-color: #fff;
-      width: 30px;
-      height: 2px;
-      top: 0;
-      left: 0;
-
-
-
+      width: 40px;
+      height: 3px;
+      top: 30px;
+      left: -20px;
+      transition: all 0.5s;
+    }
+    span{
+      position: absolute;
+      background-color: #fff;
+      width: 40px;
+      height: 3px;
+      top: 40px;
+      left: -20px;
+      transition: all 0.5s;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      background-color: #fff;
+      width: 40px;
+      height: 3px;
+      top: 50px;
+      left:-20px;
+      transition: all 0.5s;
+    }
+    &.active{
+      &:before{
+       transform: rotate(-45deg);
+       top: 40px;
+      left: -20px;
+      }
+      span{
+        transform: scale(0);
+      }
+      &:after{
+        transform: rotate(405deg);
+        top: 41px;
+      left:-20px
+      }
     }
   }
   .header__top {
@@ -73,18 +114,29 @@
       display: flex;
       justify-content: space-between;
     }
+    &-logo{
+      z-index: 3;
+      img{
+        z-index: 2;
+      }
+     
+    }
     &-menu {
       display: flex;
       align-items: center;
 
       &-list {
         display: inline-block;
+        margin-right: 40px;
+        &:last-child{
+          margin-right: 85px;
+        }
         &.active {
           border-bottom: 3px solid #fff;
         }
-        & + li {
-          margin-left: 40px;
-        }
+        // & + li {
+        //   margin-left: 40px;
+        // }
         a {
           font-size: 16px;
           color: #fff;
@@ -94,7 +146,7 @@
       }
     }
     &-btn {
-      padding-top: 40px;
+      
       a {
         font-size: 16px;
         color: $red;
