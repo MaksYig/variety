@@ -3,17 +3,13 @@
 @import "fonts";
 @import "global";
 
-.header{
-
-
+.header {
 }
 .header__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
- 
-
 }
 .header__content {
   background-position: inherit;
@@ -27,7 +23,6 @@
     justify-content: flex-end;
     align-items: center;
     position: relative;
-
   }
   &-text-block {
     max-width: 770px;
@@ -63,7 +58,7 @@
     height: 30px;
     position: relative;
     z-index: 2;
-    &:before{
+    &:before {
       content: "";
       position: absolute;
       background-color: #fff;
@@ -73,7 +68,7 @@
       left: -20px;
       transition: all 0.5s;
     }
-    span{
+    span {
       position: absolute;
       background-color: #fff;
       width: 40px;
@@ -82,29 +77,29 @@
       left: -20px;
       transition: all 0.5s;
     }
-    &:after{
+    &:after {
       content: "";
       position: absolute;
       background-color: #fff;
       width: 40px;
       height: 3px;
       top: 50px;
-      left:-20px;
+      left: -20px;
       transition: all 0.5s;
     }
-    &.active{
-      &:before{
-       transform: rotate(-45deg);
-       top: 40px;
-      left: -20px;
+    &.active {
+      &:before {
+        transform: rotate(-45deg);
+        top: 40px;
+        left: -20px;
       }
-      span{
+      span {
         transform: scale(0);
       }
-      &:after{
+      &:after {
         transform: rotate(405deg);
         top: 41px;
-      left:-20px
+        left: -20px;
       }
     }
   }
@@ -114,12 +109,11 @@
       display: flex;
       justify-content: space-between;
     }
-    &-logo{
+    &-logo {
       z-index: 3;
-      img{
+      img {
         z-index: 2;
       }
-     
     }
     &-menu {
       display: flex;
@@ -128,7 +122,7 @@
       &-list {
         display: inline-block;
         margin-right: 40px;
-        &:last-child{
+        &:last-child {
           margin-right: 85px;
         }
         &.active {
@@ -146,15 +140,14 @@
       }
     }
     &-btn {
-      
       a {
         font-size: 16px;
         color: $red;
         background-color: #fff;
         padding: 11px 22px;
         text-transform: uppercase;
-        &:hover{
-          background-color:#fff;
+        &:hover {
+          background-color: #fff;
           color: $red;
         }
       }
@@ -282,6 +275,8 @@
 }
 .couses__items-inner {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   .couses__wrapper {
     width: 370px;
     & + .couses__wrapper {
@@ -403,7 +398,6 @@
     text-transform: uppercase;
     padding: 20px 40px;
     background-color: $red;
-    
   }
 }
 .btn {
@@ -415,7 +409,6 @@
     text-transform: uppercase;
     padding: 20px 40px;
     background-color: $red;
-    
   }
 }
 #progressbar {
@@ -682,7 +675,6 @@
 .news__btn {
   a {
     padding: 18px 45px;
-   
   }
 }
 .slick-slide {
@@ -793,12 +785,11 @@
         background-color: #fff;
         text-transform: uppercase;
         padding: 24px 50px;
-        &:hover{
-          background-color:$red;
+        &:hover {
+          background-color: $red;
           color: #fff;
         }
       }
-      
     }
   }
   &__content-inner {
@@ -887,14 +878,14 @@
       font-size: 18px;
       line-height: 36px;
       color: #fff;
-      &:hover{
+      &:hover {
         color: $red;
       }
     }
   }
-  &__follow{
-   width: 272px;
-   text-align: center;
+  &__follow {
+    width: 272px;
+    text-align: center;
   }
   &__social-link {
     text-align: center;
@@ -903,8 +894,8 @@
       font-size: 24px;
       line-height: 36px;
       color: #fff;
-      
-      &:hover{
+
+      &:hover {
         color: $red;
       }
     }
@@ -917,7 +908,6 @@
         top: 0;
         left: 0;
         content: "\f099";
-        
       }
     }
     .social__ins {
@@ -931,7 +921,7 @@
         content: "\f16d";
       }
     }
-    .social__fa{
+    .social__fa {
       position: relative;
       margin-right: 30px;
       &::before {
@@ -942,7 +932,7 @@
         content: "\f09a";
       }
     }
-    .social__vi{
+    .social__vi {
       position: relative;
       margin-right: 30px;
       &::before {
@@ -953,7 +943,7 @@
         content: "\f27d";
       }
     }
-    .social__pi{
+    .social__pi {
       position: relative;
       margin-right: 30px;
       &::before {
@@ -964,7 +954,7 @@
         content: "\f0d2";
       }
     }
-    .social__in{
+    .social__in {
       position: relative;
       &::before {
         position: absolute;
@@ -975,9 +965,9 @@
       }
     }
   }
-  &__copy{
+  &__copy {
     background-color: $red;
-    &-text{
+    &-text {
       font-size: 14px;
       line-height: 36px;
       color: #fff;
@@ -990,17 +980,15 @@
 
 /* Start Pop up sign in */
 
-.login__popup-val{
-
-
+.login__popup-val {
 }
-.login__inner{
-max-width: 320px;
-background-color: rgb(255, 255, 255);
-box-shadow: 2px 3.464px 7px 0px rgba(0, 0, 0, 0.2);
-padding: 50px 15px;
+.login__inner {
+  max-width: 320px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 3.464px 7px 0px rgba(0, 0, 0, 0.2);
+  padding: 50px 15px;
 }
-.login__title{
+.login__title {
   font-size: 18px;
   line-height: 36px;
   color: $red;
@@ -1012,28 +1000,26 @@ padding: 50px 15px;
 .login__val-form,
 .login__don-form,
 .singup__val-form,
-.singup__don-form{
+.singup__don-form {
   display: flex;
-  flex-direction:column ;
+  flex-direction: column;
   align-items: center;
-  input{
+  input {
     margin-bottom: 20px;
     padding: 10px 20px;
     outline: none;
-
   }
 }
-.login__btn{
+.login__btn {
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
   background-color: $red;
   color: #fff;
-  border:none;
+  border: none;
   cursor: pointer;
   outline: none;
   padding: 10px 25px;
-
 }
 /* End Pop up sign in */
 @import "media";
